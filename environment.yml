@@ -1,0 +1,25 @@
+name: mvmgnn
+channels:
+  - pytorch
+  - nvidia
+  - pyg
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pytorch=2.8.0
+  - torchvision=0.23.0
+  - pytorch-cuda=12.8
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - networkx
+  - matplotlib
+  - tqdm
+  - pyyaml
+  - pip:
+      - --find-links https://data.pyg.org/whl/torch-2.8.0+cu128.html
+      - torch-geometric==2.7.0
+      - torch-scatter==2.1.2+pt28cu128
